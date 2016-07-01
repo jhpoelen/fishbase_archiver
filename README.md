@@ -1,5 +1,5 @@
 # fishbase_archiver
-Generates tabular archives for FishBase and SeaLifeBase tables using https://fishbase.ropensci.org . Precompiled archives can be found in the [releases](../../releases) section.
+Generates tabular archives for [FishBase](http://fishbase.org) and [SeaLifeBase](http://sealifebase.org) tables using [rOpenSci's FishBase API](https://github.com/ropensci/fishbaseapi). Precompiled archives can be found in the [releases](../../releases) section.
 
 ## prerequisites
   * linux, mac (tested on mac os x 10.11.5)
