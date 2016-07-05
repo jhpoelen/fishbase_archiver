@@ -1,1 +1,4 @@
 *.tsv.gz
+target
+.idea
+
