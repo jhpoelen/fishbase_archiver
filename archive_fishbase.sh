@@ -4,9 +4,9 @@
 # see http://fishbase.org and https://github.com/ropensci/fishbaseapi
 #
 function archive() {
-  tables=("stocks" "taxa" "species" "sealifebase/stocks" "sealifebase/taxa" "sealifebase/species")
-  for table in ${tables[*]}; do
+  for table in $(cat table_names.tsv); do
     archiveTable $table
+    archiveTable "sealifebase/$table"
   done
 }
 
