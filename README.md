@@ -7,7 +7,7 @@ Generates tabular archives for [FishBase](http://fishbase.org) and [SeaLifeBase]
   * jq (see https://stedolan.github.io/jq/)
 
 ## usage
-Execute ```sh archive_fishbase.sh``` to compile the fishbase archives. 
+Execute ```./archive_fishbase.sh``` to compile the fishbase archives. 
 
 ## expected results 
 You'll see output like:
