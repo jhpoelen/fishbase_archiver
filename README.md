@@ -1,6 +1,8 @@
 # fishbase_archiver
 Generates tabular archives for [FishBase](http://fishbase.org) and [SeaLifeBase](http://sealifebase.org) tables using [rOpenSci's FishBase API](https://github.com/ropensci/fishbaseapi). Precompiled archives can be found in the [releases](../../releases) section.
 
+Please attribute Fishbase and SeaLifeBase when using the output of this archiver. You can find citation/ attribution guidelines on the respective webpages. At time of writing (Feb 2017), both Fishbase and SeaLifeBase was licensed under [Creative Commons Attribution-Noncommercial 3.0 Unported License](https://creativecommons.org/licenses/by-nc/3.0/).
+
 ## prerequisites
   * linux, mac (tested on mac os x 10.11.5)
   * bash / curl
