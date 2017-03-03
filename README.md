@@ -18,7 +18,7 @@ You'll see output like:
 
 [https://fishbase.ropensci.org/stocks?offset=0&limit=5000] downloading...
 [https://fishbase.ropensci.org/stocks?offset=0&limit=5000] downloaded.
-returned: 5000, offset= 5000
+returned: [5000], offset: [5000]
 [https://fishbase.ropensci.org/stocks?offset=5000&limit=5000] downloading...
 [https://fishbase.ropensci.org/stocks?offset=5000&limit=5000] downloaded.
 returned: 5000, offset= 10000
@@ -27,17 +27,15 @@ returned: 5000, offset= 10000
 After the script finishes, you'll find some archives in your work directory. Some examples look like: 
 
 ```
-sealifebase_species.tsv.gz
-sealifebase_stocks.tsv.gz
-sealifebase_taxa.tsv.gz
-species.tsv.gz
-stocks.data.tsv.gz
-stocks.head.tsv.gz
-stocks.tsv.gz
-taxa.tsv.gz
+species_sealifebase.tsv.gz
+stocks_sealifebase.tsv.gz
+taxa_sealifebase.tsv.gz
+species_fishbase.tsv.gz
+stocks_fishbase.tsv.gz
+taxa_fishbase.tsv.gz
 ```
 
-The archives are gzip compressed, tab separated files. The first few lines of ```stocks.tsv.gz``` look like:
+The archives are gzip compressed, tab separated files. The first few lines of ```stocks_fishbase.tsv.gz``` look like:
 
 ```tsv
 StockCode	SpecCode	StockDefs	StockDefsGeneral	Level	LocalUnique	IUCN_Code	IUCN_Assessment	Protected	StocksRefNo	CITES_Code	CITES_Date	CITES_Ref	CITES_Remarks	Northernmost	NorthSouthN	Southermost	NorthSouthS	Westernmost	WestEastW	Easternmost	WestEastE	BoundingRef	BoundingMethod	TempMin	TempMax	TempRef	EnvTemp	Resilience	ResilienceRemark	pHMin	pHMax	pHRef	dHMin	dHMax	dHRef	GenBankID	RfeID	FIGIS_ID	EcotoxID	SCRFA_data	GMAD_ID	SAUP	SAUP_ID	SAUP_Group	AusMuseum	FishTrace	IUCN_ID	IUCN_Group	BOLD_ID	IGFAName	EssayID	ICESStockID	OsteoBaseID	DORIS_ID	Aquamaps	Morphology	Occurrence	Strains	Ecology	Diseases	Abnorm	Metabolism	Predators	Spawning	Fecundity	Speed	Diet	Eggs	EggDevelop	Food	Larvae	LarvDyn	LarvSpeed	PopDyn	LengthWeight	Gillarea	Maturity	MatSizes	Processing	Reproduction	Introductions	Abundance	Vision	Genetics	Aquaculture	CountryComp	Allele	GeneticStudies	Ration	Foods	Ecotoxicology	Brains	Catches	FAOAqua	LengthRelations	LengthFrequency	Sounds	Broodstock	EggNursery	FryNursery	LarvalNursery	Entered	DateEntered	Modified	DateModified	Expert	DateChecked	TS
