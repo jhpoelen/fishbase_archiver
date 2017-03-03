@@ -5,14 +5,14 @@
 #
 function archive() {
   for table in $(cat table_names.tsv); do
-    archiveTable "$table"
-    archiveTable "$table/sealifebase"
+    archiveTable "$table" "$table" "fishbase"
+    archiveTable "$table" "sealifebase/$table" "sealifebase"
   done
 }
 
 function archiveTable() {
-  table=$1
-  tableNoSlash=${table//\//_}
+  table=$2
+  archiveName="$1_$3"
   
   offset=0
   limit=5000
@@ -34,10 +34,10 @@ function archiveTable() {
       cat $filename | gunzip | jq -r '.data[] | map(tostring) | @tsv' | gzip >> $data
     fi
     offset=$[$offset+$limit]
-    echo "returned: $returned, offset= $offset"
+    echo "returned: [$returned], offset: [$offset]"
     rm $filename
   done
-  archive="$tableNoSlash.tsv.gz"
+  archive="$archiveName.tsv.gz"
   cat $header $data > $archive 
   rm $data $header
 }
