@@ -5,7 +5,7 @@
 #
 function archive() {
   for table in $(cat table_names.tsv); do
-    archiveTable "$table/fishbase"
+    archiveTable "$table"
     archiveTable "$table/sealifebase"
   done
 }
