@@ -6,7 +6,7 @@ Please attribute Fishbase and SeaLifeBase when using the output of this archiver
 ## prerequisites
   * linux, mac (tested on mac os x 10.11.5)
   * bash / curl
-  * jq (see https://stedolan.github.io/jq/)
+  * jq 1.5+ (see https://stedolan.github.io/jq/)
 
 ## usage
 Execute ```./archive_fishbase.sh``` to compile the fishbase archives. 
